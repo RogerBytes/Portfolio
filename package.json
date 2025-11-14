@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "@iconify/iconify": "^3.1.1",
+    "@iconify/tools": "^3.0.7",
+    "detect-element-overflow": "^1.4.2"
+  }
+}

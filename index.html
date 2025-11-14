@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <title>Portfolio</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Découvrez mes réalisations et compétences à travers mon portfolio professionnel. Je suis passionné par l'informatique et j'ai travaillé sur divers projets personnels. Contactez-moi pour discuter de vos besoins et collaborer ensemble."
+    />
+    <meta
+      name="keywords"
+      content="portfolio, programmation, projets, réalisations, compétences, contact, cursus, cv, RogerBytes, RogerBytes Softworks"
+    />
+    <meta name="author" content="Harry RICHMOND" />
+    <meta
+      http-equiv="Cache-Control"
+      content="no-cache, no-store, must-revalidate"
+    />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <meta name="darkreader-lock" />
+    <link rel="shortcut icon" href="./img/favicon.svg" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="./script/main.js" defer type="module"></script>
+    <script
+      src="./node_modules/@iconify/iconify/dist/iconify.min.js"
+      defer
+      type="module"
+    ></script>
+    <!-- https://rogerbytes-softworks.github.io/Portfolio/ -->
+  </head>
+
+  <body>
+    <div id="surface">
+      <div id="mainBox">
+        <figure id="photo">
+          <img src="./img/me.webp" alt="mon avatar" />
+        </figure>
+
+        <div id="presentation">
+          <p>
+            Enchanté ! <br /><strong>Harry Richmond</strong> Autodidacte passionné par le développement et
+l’architecture des systèmes, j’ai intégré la formation
+CDA pour professionnaliser mes acquis. Je recherche
+un stage pour apprendre, pratiquer et contribuer à
+des projets concrets..
+          </p>
+
+        </div>
+
+        <table id="contact">
+          <tr
+            onclick="window.open('https://www.linkedin.com/in/rogerbytes-softworks/', '_blank');"
+            class="contact-item"
+          >
+            <td>
+              <i
+                class="iconify"
+                data-icon="fa6-brands:linkedin"
+                style="font-size: 1.9em; color: #d9d9d9"
+              ></i>
+            </td>
+            <td>LinkedIn</td>
+          </tr>
+          <tr
+            onclick="window.open('https://github.com/RogerBytes', '_blank');"
+            class="contact-item"
+          >
+            <td>
+              <i
+                class="iconify"
+                data-icon="jam:github"
+                style="font-size: 1.9em; color: #d9d9d9"
+              ></i>
+            </td>
+            <td>GitHub</td>
+          </tr>
+          <tr
+            onclick="window.open('https://matrix.to/#/@rogerbytes:matrix.org', '_blank');"
+            class="contact-item"
+          >
+            <td>
+              <i
+                class="iconify"
+                data-icon="tabler:brand-matrix"
+                style="font-size: 1.9em; color: #d9d9d9"
+              ></i>
+            </td>
+            <td>Matrix</td>
+          </tr>
+          <tr
+            onclick="window.open('https://maps.app.goo.gl/3SdmuYwXvBqDZcWJA', '_blank');"
+            class="contact-item"
+          >
+            <td>
+              <i
+                class="iconify"
+                data-icon="bxs:map"
+                style="font-size: 1.9em; color: #d9d9d9"
+              ></i>
+            </td>
+            <td>Lille</td>
+          </tr>
+        </table>
+
+        <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti soluta nostrum modi harum odio doloremque ea ab tempora excepturi? Error aut aliquam officiis fugit natus explicabo maiores ratione corporis tempore?
+      Quibusdam, ipsum aut, maiores dolorem, neque beatae dicta praesentium autem cumque repellat ut dolore? Nam perferendis, ea minus laboriosam dolor nesciunt facilis nemo voluptate repellendus quis atque exercitationem molestias accusantium.
+      Quibusdam, ipsum aut, maiores dolorem, neque beatae dicta praesentium autem cumque repellat ut dolore? Nam perferendis, ea minus laboriosam dolor nesciunt facilis nemo voluptate repellendus quis atque exercitationem molestias accusantium.
+      Quibusdam, ipsum aut, maiores dolorem, neque beatae dicta praesentium autem cumque repellat ut dolore? Nam perferendis, ea minus laboriosam dolor nesciunt facilis nemo voluptate repellendus quis atque exercitationem molestias accusantium.
+      </p> -->
+      </div>
+
+      <div id="navBar">
+        <label id="labelMenu" for="burgerBtn">Placeholder du Texte</label>
+        <button id="backBtn" class="navBtn" aria-label="Retour">
+          <figure>
+            <i
+              class="iconify"
+              data-icon="mingcute:arrow-left-line"
+              style="align-items: center; font-size: 1.5em; color: #d9d9d9"
+            ></i>
+          </figure>
+        </button>
+        <button id="nextBtn" class="navBtn" aria-label="Suivant">
+          <figure>
+            <i
+              class="iconify"
+              data-icon="mingcute:arrow-right-line"
+              style="align-items: center; font-size: 1.5em; color: #d9d9d9"
+            ></i>
+          </figure>
+        </button>
+        <button id="burgerBtn" class="navBtn" aria-label="Menu">
+          <figure>
+            <i
+              class="iconify"
+              data-icon="iconamoon:menu-burger-horizontal-bold"
+              style="align-items: center; font-size: 1.5em; color: #d9d9d9"
+            ></i>
+          </figure>
+        </button>
+        <div id="beanBox">
+          <button id="scrollBean"></button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

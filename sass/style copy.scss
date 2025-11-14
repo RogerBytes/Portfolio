@@ -1,0 +1,166 @@
+/*
+sass sass/style.scss css/style.css --watch --style compressed
+*/
+
+/*
+Voix ambiguë d'un cœur qui, au zéphyr, préfère les joyaux à Kintzburg.
+*/
+
+*, ::before, ::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: Regular;
+  src: url(../font/Stone-Inf-ITC-Medium.ttf);
+}
+
+@font-face {
+  font-family: Menu;
+  src: url(../font/ITCAvantGardeStd-Demi.otf);
+}
+
+body {
+  font-family: Regular, "Times New Roman", Times, serif;
+  font-display: swap;
+  height: 100dvh;
+  background-image: url("../img/background/day.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right;
+  display: grid;
+  grid-template-columns: 18px 1fr 18px;
+  grid-template-rows: 18px 1fr 18px;
+}
+
+#hiddenBox {
+  display: grid;
+  grid-column: 2/3;
+  grid-row: 2/3;
+  border-radius: 10px;
+  overflow: hidden;
+  // grid-template-rows: 1.2fr .8fr;
+  grid-template-rows: 1.2fr .8fr ;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, .6);
+}
+
+#menuNav {
+  background-color: #8f8f8f35;
+  grid-row: 0/0;
+}
+
+#mainBox {
+  display: grid;
+  grid-template-columns: 15px 9fr 15px; // 3
+  grid-template-rows: 15px .4fr 3fr .6fr 1fr 1fr 1fr 1fr 1fr 15px; // 10
+  background-color: #8f8f8f35;
+  grid-row: 1/3;
+  color: #d9d9d9;
+}
+
+#photo {
+  grid-row: 3/4;
+  grid-column: 2/3;
+  background-color: #d9d9d97b;
+  border-radius: 50%;
+  height: 100%;
+  aspect-ratio: 1/1;
+  overflow: hidden;
+  justify-self: center;
+  align-self: center;
+}
+
+#photo img {
+  height: 105%;
+  width: 105%;
+}
+
+#presentation {
+  grid-row: 5/7;
+  grid-column: 2/3;
+}
+
+#contact {
+  grid-row: 7/10;
+  grid-column: 2/3;
+  padding: 10px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: Menu, Arial, Helvetica, sans-serif;
+  font-size: .8em;
+}
+
+#contact td:first-child {
+  text-align: center;
+}
+
+#contact .icon {
+  font-size: 20px;
+}
+
+#contact td {
+  padding-right: 10px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+#contact tr td:nth-of-type(2) {
+  font-size: 1.2em;
+}
+
+#menuNav::before {
+  display: block;
+  height: 2px;
+  background-color: #d9d9d9;
+  width: 100%;
+  content: "";
+}
+
+#nav {
+  display: grid;
+  grid-template-columns: 5px 4fr 1fr 1fr 1fr 5px;
+  grid-template-rows: 5px 1fr 7px;
+  height: 100%;
+  grid-column-gap: 7px;
+  align-items: center;
+  justify-content: center;
+}
+
+#textMenu {
+  color: #d9d9d9;
+  grid-column: 2/3;
+  grid-row: 2/3;
+  border: none;
+  font-family: Menu, Arial, Helvetica, sans-serif;
+  font-size: 1.2em;
+  padding-top: 2px;
+}
+
+.navBtn{
+  color: #d9d9d9;
+  border-radius: 50%;
+  border: #d9d9d9 solid 2px;
+  width: 100%;
+  aspect-ratio: 1/1;
+  background-color: #d9d9d916;
+}
+
+#backBtn {
+  grid-column: 3/4;
+  grid-row: 2/3;
+}
+
+#nextBtn {
+  grid-column: 4/5;
+  grid-row: 2/3;
+}
+
+#burgerBtn {
+  grid-column: 5/6;
+  grid-row: 2/3;
+}

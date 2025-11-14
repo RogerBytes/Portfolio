@@ -1,0 +1,26 @@
+
+
+ body.desktop {
+   color: orangered;
+ }
+
+ @media (min-height: 710px) {
+   body {
+     overflow: visible;
+     height: 100dvh;
+   }
+ }
+
+/* Pour les tablettes en mode paysage */
+@media (min-aspect-ratio: 1/1) and (max-width: 1024px) {
+  body.mobile {
+    color: red;
+  }
+}
+
+/* Pour les mobiles en mode paysage */
+@media (min-aspect-ratio: 1/1) and (max-height: 480px) {
+  body.mobile {
+    color: blue;
+  }
+}
